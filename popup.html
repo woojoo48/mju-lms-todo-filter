@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>명지대 LMS 할 일 필터</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>명지대 LMS 할 일 필터</h1>
+    <p class="intro">정규 과목은 자동으로 표시하고 비교과는 숨겨요. 과목마다 바꿀 수 있고, 바꾸면 바로 적용돼요.</p>
+    <label class="enable-row">
+      <input id="enabled" type="checkbox">
+      <span>정규 과목만 표시</span>
+    </label>
+    <div id="status" class="status" role="status"></div>
+    <div id="course-list" class="course-list"></div>
+    <p class="privacy">과목 키·과목명과 설정만 이 브라우저에 저장해요. 과제 제목과 마감일은 저장하거나 외부로 보내지 않아요.</p>
+  </main>
+  <script src="core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

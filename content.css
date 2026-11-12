@@ -1,0 +1,39 @@
+.mju-todo-hidden {
+  display: none !important;
+}
+
+.mju-todo-inline-toggle,
+.mju-todo-filter-status button {
+  padding: 4px 8px;
+  border: 1px solid rgba(120, 160, 255, 0.55);
+  border-radius: 6px;
+  background: rgba(66, 119, 255, 0.14);
+  color: inherit;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.mju-todo-inline-toggle {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.mju-todo-filter-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 10px;
+  padding: 7px 10px;
+  border: 1px solid rgba(120, 160, 255, 0.35);
+  border-radius: 7px;
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.mju-todo-inline-toggle.mju-todo-held,
+.mju-todo-filter-status.mju-todo-held {
+  border-color: rgba(234, 140, 60, 0.7);
+}

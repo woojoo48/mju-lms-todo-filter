@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "명지대 LMS 할 일 필터",
+  "version": "0.3.1",
+  "description": "명지대 LMS의 할 일 배지와 목록에서 비교과 과목을 숨기고 정규 과목 기준으로 다시 셉니다.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://lms.mju.ac.kr/ilos/*"],
+      "js": ["core.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "정규 과목 할 일 설정",
+    "default_popup": "popup.html"
+  }
+}
